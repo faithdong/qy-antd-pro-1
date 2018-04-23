@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+// import { connect } from 'dva';
 import {  Table } from 'antd';
 
 
@@ -6,15 +7,18 @@ import PageHeaderLayout from '../../layouts/PageHeaderLayout';
 
 import styles from './ExpendList.less';
 
-
+/* @connect(({ list, loading }) => ({
+  list,
+  loading: loading.models.list,
+})) */
 export default class ExpendList extends PureComponent {
   componentDidMount() {
-    this.props.dispatch({
+    /* this.props.dispatch({
       type: 'list/fetch',
       payload: {
         count: 8,
       },
-    });
+    }); */
   }
 
   render() {
