@@ -77,6 +77,10 @@ const menuData = [
           },
         ],
       },
+      {
+        name: '可展开表格',
+        path: 'expend-list',
+      },
     ],
   },
   {
